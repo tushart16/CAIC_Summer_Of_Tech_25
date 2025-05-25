@@ -1,14 +1,14 @@
 # Week 1: Introduction to Webots and Multirotor Simulation
 Deadline: 25 May EOD
 
-1. **Objectives**
-Understand the components and basic flight dynamics of a quadrotor.
+1. ### **Objectives**
+-Understand the components and basic flight dynamics of a quadrotor.
 Install and configure Webots and Python controller support.
 Execute a simple Webots controller to perform take-off, hover, and land.
 
 ---
 
-2. **Setup & Prerequisites**
+2. ### **Setup & Prerequisites**
 System Requirements
 
 
