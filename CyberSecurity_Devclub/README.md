@@ -4,7 +4,7 @@ Welcome to the cybersecurity vertical of the CSoT part by DevClub, IIT Delhi. Th
 
 While the course emphasizes offensive techniques (red teaming) to make learning fun and interactive, understanding these methods is essential for anyone looking to defend systems effectively. Whether you're interested in ethical hacking or system security and auditing (blue teaming), this foundation will help you recognize, exploit, and ultimately mitigate real-world vulnerabilities.
 
-**Start Date:** To be decided  
+**Start Date:** 25th May, 2025
 **Format:** Weekly resource bundles + self-paced study + weekend CTF challenges  
 **Audience:** IIT Delhi students
 
