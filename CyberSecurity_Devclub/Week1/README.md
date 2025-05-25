@@ -216,6 +216,16 @@ command > output.txt 2>&1        # Redirect both output and errors
 
 ---
 
+## **Basic Challenge:**
+There is a .tar.zx file present in this folder, download it in your linux system and unzip it.
+You can use the following command to do the same:
+```bash
+wget -qO- https://github.com/Z3R0C1PH3R/CAIC_Summer_Of_Tech_25/raw/refs/heads/main/CyberSecurity_Devclub/Week1/scavenger_hunt.tar.xz | tar -Jxf - 
+```
+Then using only your terminal, try to find the real hidden flag.
+
+---
+
 ## Basic Bash Scripting
 
 ### Your First Script
@@ -379,9 +389,6 @@ grep -r "admin" /var/log/ 2>/dev/null # Search logs
 - Linux Fundamentals Part 1: https://tryhackme.com/room/linuxfundamentalspart1
 - Linux Fundamentals Part 2: https://tryhackme.com/room/linuxfundamentalspart2
 - Linux Fundamentals Part 3: https://tryhackme.com/room/linuxfundamentalspart3
-
-**Challenge:**
-There is a .tar.zx file present in this folder, download it in your linux system and unzip it. Then using only your terminal, try to find the real hidden flag.
 
 ### Assignment 2: Bash Scripting Challenges
 
