@@ -102,44 +102,44 @@ Verify that the environment loads and that the quadrotor model is visible.
 Implement the Python Controller
 
 
-Create controllers/takeoff_hover_land.py with the following logic, some of the code are not completed. Understand the logic and complete the code :
+*Create controllers/takeoff_hover_land.py with the following logic, some of the code are not completed. Understand the logic and complete the code :*
 
  from controller import Robot
 
 #Create Robot instance
--robot = Robot()
--timestep = int(robot.getBasicTimeStep())
+robot = Robot()
+timestep = int(robot.getBasicTimeStep())
 
 #Motor device names — adjust if needed
--motor_names = ["front left propeller", "front right propeller", "rear left propeller", "rear right propeller"]
+motor_names = ["front left propeller", "front right propeller", "rear left propeller", "rear right propeller"]
 
-# Initialize motors
--motors = []
--for name in motor_names:
-    -motor = robot.getDevice(name)
-    -if motor is None:
-     -   print(f"Error: Motor device '{name}' not found. Please check device names.")
-      -  exit(1)
-    -motor.setPosition(float('inf'))  # Velocity control mode
-    -motor.setVelocity(0.0)
-    -motors.append(motor)
+#Initialize motors
+motors = []
+for name in motor_names:
+    motor = robot.getDevice(name)
+    if motor is None:
+        print(f"Error: Motor device '{name}' not found. Please check device names.")
+        exit(1)
+    motor.setPosition(float('inf'))  # Velocity control mode
+    motor.setVelocity(0.0)
+    motors.append(motor)
 
--def set_all_motors_velocity(velocity):
- -   for motor in motors:
+def set_all_motors_velocity(velocity):
+  for motor in motors:
         motor.setVelocity(velocity)
 
 #Set motor velocities with opposite directions for proper torque balance
--def set_all_motors_velocity(base_velocity):
+def set_all_motors_velocity(base_velocity):
     #Direction multipliers for motors: +1 or -1 depending on spin direction
-    -directions = [ - , - , -  , - ]  # Edit and adjust if your drone motor layout differs
-    -for i, motor in enumerate(motors):
-        -motor.setVelocity(base_velocity * directions[i])
+    directions = [ - , - , -  , - ]  # Edit and adjust if your drone motor layout differs
+    for i, motor in enumerate(motors):
+        motor.setVelocity(base_velocity * directions[i])
 
 #Set the Parameters
--takeoff_duration = 0.0   # seconds to reach hover velocity
--hover_duration = 0.0    # seconds to hover
--land_duration = 0.0     # seconds to land
--max_velocity =  0.0    # max motor velocity for hover (tune as needed)
+takeoff_duration = 0.0   #seconds to reach hover velocity
+hover_duration = 0.0    #seconds to hover
+land_duration = 0.0     #seconds to land
+max_velocity =  0.0    #max motor velocity for hover (tune as needed)
 
 #########################################################
 
@@ -147,9 +147,8 @@ Create controllers/takeoff_hover_land.py with the following logic, some of the c
 
 #########################################################
 
--set_all_motors_velocity(0.0)
-
--print("Flight sequence complete.")
+set_all_motors_velocity(0.0)
+print("Flight sequence complete.")
 
 
 In Webots, assign this script as the controller for the mavic_2_pro node.
@@ -157,9 +156,7 @@ In Webots, assign this script as the controller for the mavic_2_pro node.
 
 Run the Simulation
 
-
 Click Run in Webots.
-
 
 Observe the drone take off, hover at approximately 1 m, then land smoothly.
 
@@ -170,27 +167,27 @@ Controller Script: takeoff_hover_land.py with clear comments.
 
 
 Simulation Recording:
--A screen capture or video (≤ 2 minutes) demonstrating take-off, hover, and landing.
+ A screen capture or video (≤ 2 minutes) demonstrating take-off, hover, and landing.
 
 
 Brief Report:
--A short README section describing any installation challenges or tips.
+ A short README section describing any installation challenges or tips.
 
 ---
 
 ### 6. **Bonus Challenge (Optional)**
--Augment your controller to perform a square flight pattern at 1 m altitude before landing:
--Fly forward 1 m, right 1 m, backward 1 m, left 1 m.
--Return to the origin point.
--Land as before.
+Augment your controller to perform a square flight pattern at 1 m altitude before landing:
+Fly forward 1 m, right 1 m, backward 1 m, left 1 m.
+Return to the origin point.
+Land as before.
 
 ---
 
 ### 7. **Resources**
 
--Webots Installation Guide: https://cyberbotics.com/doc/guide/installing-webots
--Webots Python API Reference: https://cyberbotics.com/doc/reference/python-api 
--Mavic2Pro Tutorial: https://cyberbotics.com/doc/guide/mavic-2-pro?version=R2023a
+Webots Installation Guide: https://cyberbotics.com/doc/guide/installing-webots
+Webots Python API Reference: https://cyberbotics.com/doc/reference/python-api 
+Mavic2Pro Tutorial: https://cyberbotics.com/doc/guide/mavic-2-pro?version=R2023a
 
 
 
