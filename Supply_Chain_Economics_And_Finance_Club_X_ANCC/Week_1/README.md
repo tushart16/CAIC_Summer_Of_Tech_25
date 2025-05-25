@@ -111,16 +111,21 @@ For each test case, print a **single line** with the **area of the intersection*
 
 ---
 
-## 📚 Further Resources to Learn About Supply Chain Problems
 
-To better understand the real-world challenges and computational aspects of supply chains, explore the following resources:
+## Further Resources to Learn About Supply Chain
 
-### 🌐 Supply Chain Fundamentals
-- [Coursera: Supply Chain Management Specialization by Rutgers](https://www.coursera.org/specializations/supply-chain-management) — Covers sourcing, logistics, planning, and strategy.
-- [Khan Academy: Inventory and Supply Chain Management](https://www.khanacademy.org/economics-finance-domain/core-finance) — Good for economic context around inventory and flow.
+---
 
-### 📖 Articles & Case Studies
-- [McKinsey: Supply Chain 4.0](https://www.mckinsey.com/business-functions/operations/our-insights/supply-chain-40--the-next-generation-digital-supply-chain) — How technology is reshaping logistics.
-- [Harvard Business Review: Managing Uncertainty in Supply Chains](https://hbr.org/2003/10/the-supply-chain-has-no-clothes) — Insight into real-world issues and trade-offs.
+- [**What Is a Supply Chain? – Investopedia**](https://www.investopedia.com/terms/s/supplychain.asp)  
+  A comprehensive overview of how supply chains function, including key players and the essential steps from raw materials to customer delivery.
+
+- [**Supply Chain Management: Definition, Jobs, and How It Works – Coursera**](https://www.coursera.org/articles/supply-chain-management)  
+  Explains the role of supply chain managers, the importance of aligning supply with demand, and typical responsibilities.
+
+- [**Supply Chain - Overview, Importance, and Examples – Corporate Finance Institute**](https://corporatefinanceinstitute.com/resources/operations/supply-chain/)  
+  A straightforward guide to the supply chain lifecycle, with diagrams and real-world examples.
+
+---
+
 
 
