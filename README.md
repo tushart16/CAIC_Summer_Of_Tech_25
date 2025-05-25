@@ -11,7 +11,7 @@ Welcome to CAIC Summer of Tech
 
 ## [FullStack by Devclub](FullStack_Devclub/)
 
-## [#Gamedev by Devclub](Gamedev_Devclub/)
+## [Gamedev by Devclub](Gamedev_Devclub/)
 
 ## [Interactive Light Pollution Visualization by Physics and Astronomy Club](Interactive_Light_Pollution_Visualization_PAC/)
 
