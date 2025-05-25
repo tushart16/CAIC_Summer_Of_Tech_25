@@ -106,40 +106,40 @@ Create controllers/takeoff_hover_land.py with the following logic, some of the c
 
  from controller import Robot
 
-# Create Robot instance
-robot = Robot()
-timestep = int(robot.getBasicTimeStep())
+#Create Robot instance
+-robot = Robot()
+-timestep = int(robot.getBasicTimeStep())
 
-# Motor device names — adjust if needed
-motor_names = ["front left propeller", "front right propeller", "rear left propeller", "rear right propeller"]
+#Motor device names — adjust if needed
+-motor_names = ["front left propeller", "front right propeller", "rear left propeller", "rear right propeller"]
 
 # Initialize motors
-motors = []
-for name in motor_names:
-    motor = robot.getDevice(name)
-    if motor is None:
-        print(f"Error: Motor device '{name}' not found. Please check device names.")
-        exit(1)
-    motor.setPosition(float('inf'))  # Velocity control mode
-    motor.setVelocity(0.0)
-    motors.append(motor)
+-motors = []
+-for name in motor_names:
+    -motor = robot.getDevice(name)
+    -if motor is None:
+     -   print(f"Error: Motor device '{name}' not found. Please check device names.")
+      -  exit(1)
+    -motor.setPosition(float('inf'))  # Velocity control mode
+    -motor.setVelocity(0.0)
+    -motors.append(motor)
 
-def set_all_motors_velocity(velocity):
-    for motor in motors:
+-def set_all_motors_velocity(velocity):
+ -   for motor in motors:
         motor.setVelocity(velocity)
 
-# Set motor velocities with opposite directions for proper torque balance
-def set_all_motors_velocity(base_velocity):
-    # Direction multipliers for motors: +1 or -1 depending on spin direction
-    directions = [ - , - , -  , - ]  # Edit and adjust if your drone motor layout differs
-    for i, motor in enumerate(motors):
-        motor.setVelocity(base_velocity * directions[i])
+#Set motor velocities with opposite directions for proper torque balance
+-def set_all_motors_velocity(base_velocity):
+    #Direction multipliers for motors: +1 or -1 depending on spin direction
+    -directions = [ - , - , -  , - ]  # Edit and adjust if your drone motor layout differs
+    -for i, motor in enumerate(motors):
+        -motor.setVelocity(base_velocity * directions[i])
 
-# Set the Parameters
-takeoff_duration = 0.0   # seconds to reach hover velocity
-hover_duration = 0.0    # seconds to hover
-land_duration = 0.0     # seconds to land
-max_velocity =  0.0    # max motor velocity for hover (tune as needed)
+#Set the Parameters
+-takeoff_duration = 0.0   # seconds to reach hover velocity
+-hover_duration = 0.0    # seconds to hover
+-land_duration = 0.0     # seconds to land
+-max_velocity =  0.0    # max motor velocity for hover (tune as needed)
 
 #########################################################
 
@@ -147,9 +147,9 @@ max_velocity =  0.0    # max motor velocity for hover (tune as needed)
 
 #########################################################
 
-set_all_motors_velocity(0.0)
+-set_all_motors_velocity(0.0)
 
-print("Flight sequence complete.")
+-print("Flight sequence complete.")
 
 
 In Webots, assign this script as the controller for the mavic_2_pro node.
