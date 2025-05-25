@@ -189,13 +189,13 @@ print("Flight sequence complete.")
  -In Webots, assign this script as the controller for the mavic_2_pro node.
 
 
- -Run the Simulation
+   -Run the Simulation
 
 
- -Click Run in Webots.
+   -Click Run in Webots.
 
 
-Observe the drone take off, hover at approximately 1 m, then land smoothly.
+   -Observe the drone take off, hover at approximately 1 m, then land smoothly.
 
 ---
 
