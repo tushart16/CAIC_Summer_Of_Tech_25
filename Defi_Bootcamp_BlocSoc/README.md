@@ -1,60 +1,84 @@
-# 🚀 DeFi Summer Bootcamp 🌞
+# 🌊 DeFi Summer Bootcamp: Your Onchain Builder Journey Begins Here
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Status-Enrollment%20Open-brightgreen" alt="Status: Enrollment Open">
-  <img src="https://img.shields.io/badge/Team-BlocSoc-blue" alt="Team: Robotics Club">
-  <img src="https://img.shields.io/badge/Duration-6%20Weeks-orange" alt="Duration: 5/6 Weeks">
+  <img src="https://img.shields.io/badge/Status-Ongoing-brightgreen" alt="Status: Ongoing">
+  <img src="https://img.shields.io/badge/Track-DeFi%20&%20Onchain-blue" alt="Track: DeFi & Onchain">
+  <img src="https://img.shields.io/badge/Duration-6%20Weeks-orange" alt="Duration: 6 Weeks">
 </div>
 
 This will be a 5 week bootcamp to get **interested** people familised with the Defi and its economic effects in web3, will be taking online session along with weekly assingment nand top it off with project at the end.
 
 ### Link to original repo: [here](https://github.com/blocsoc-iitd/defi-bootcamp)
 
-# Hey everyone!
-The vision behind organizing this bootcamp is to get everyone familiar with blockchain 🧠, help prepare for upcoming hackathons 🛠️, and provide non-members of the club an opportunity to explore the technology and dive deeper into it 🌐.
+## Hey frens 👋
 
-We aim to make the bootcamp as interactive as possible 🤝 by discussing real-world challenges 🌍 and limitations in existing systems, and by brainstorming new project ideas together 💡.
+Welcome to the **DeFi Summer Bootcamp** — an intense, community-led sprint through the wild world of decentralized finance.  
+This isn’t just a course. It’s a movement.
 
-We also plan to hold weekly doubt-clearing sessions 🗓️ to support participants throughout the bootcamp.
+If you’re here, you're either:
+- Curious about how DeFi actually works,
+- Hungry to build cool stuff onchain,
+- Or just here for the vibes (and maybe an NFT 👀).
 
-Need some more incentive besides knowledge? We got you some — guess what — **NFTs**!!! 🎉🎨
-
----
-
-## 🏆 Why should you join?
-- 💡 Actually understand how DeFi works — not just buzzwords
-- 🧱 Build cool stuff on-chain, no testnet nightmares required
-- 🧬 Earn exclusive NFTs to flex your on-chain journey
-- 💥 And most importantly — you’ll learn Web3 without wanting to rage-quit 😤
+Whatever brought you — you’re in the right place.
 
 ---
 
+## 🧠 What’s This All About?
+
+Think of this as your **DeFi builder onboarding**.  
+Over the next 6 weeks, you’ll go from zero to onchain — learning about protocols, smart contracts, security, MEV, and more.  
+And not just learning — actually building. Every week includes:
+
+- 📖 Reading + resources  
+- 🛠️ Assignments to get your hands dirty  
+- 📚 Deeper dives for the curious  
+- 🧵 Twitter/X threads and blogs from community members
+
+---
 
 ## 📚 Weekly Modules
 
-- 🔰 [Week 1: Introduction to DeFi](./week1/README.md)
-- 💱 [Week 2: DeFi Protocols](./week2/README.md)
-- ⚠️ [Week 3: Limitations of DeFi & Solutions](./week3/README.md)
-- 🧪 [Week 4 & 5: Research and Projects](./week4-5/README.md)
+Each week builds on the last — from core concepts to real-world apps:
 
+- 🔰 [Week 1: Introduction to DeFi](./week1)  
+- 💱 [Week 2: DeFi Protocols](./week2)  
+- ⚠️ [Week 3: Limitations of DeFi & Solutions](./week3)  
+- 🧪 [Week 4 & 5: Research and Projects](./week4-5)
 ---
 
 ## 🏆 NFT Rewards
 
-Participants can earn exclusive soulbound NFTs based on their engagement and completion level.
+As you participate and complete tasks, you’ll earn **soulbound NFTs** — digital proof of your journey.
 
-🎨 [View Reward Tiers and Criteria](./nfts/README.md)
+🎨 [Check out the NFT reward tiers and how to earn them](./nfts)
+
+> ✨ NFT distribution will be manual — based on contribution, creativity & commitment.
 
 ---
 
 ## 🧠 Assignments
 
-We’re following the [SpeedrunEthereum challenges](https://speedrunethereum.com/) — a proven path to learn by building!
+We’re following the [Speedrun Ethereum challenges](https://speedrunethereum.com/) — battle-tested, beginner-friendly, and seriously fun.  
+Every week comes with optional builds, bonus missions, and plenty of repo-digging.
 
 ---
 
-## 🙌 Join Us!
+## 🛠️ Tech Requirements
 
-Weekly sessions, live Q&As, and discussion groups await! Whether you’re a beginner or a builder — DeFi Summer is for everyone.
+- A computer that can handle VSCode + a browser
+- Basic Git & terminal knowledge
+- Familiarity with JavaScript / Solidity helps (but not required)
 
-> Let’s BUIDL this summer! 🔥
+---
+## 🚧 Work In Progress
+
+This repo is a living document — just like the ecosystem it’s based on.  
+We’ll keep updating things as we go. If you want to contribute, open an issue or drop a PR.  
+If you’re confused, lost, or excited — tag us.
+
+---
+
+<div align="center">
+  <i>Let’s build the future of finance, together</i>
+</div>
