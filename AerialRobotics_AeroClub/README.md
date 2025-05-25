@@ -1,14 +1,14 @@
 # Week 1: Introduction to Webots and Multirotor Simulation
 Deadline: 25 May EOD
 
-1. ### **Objectives**
+### 1. **Objectives**
 -Understand the components and basic flight dynamics of a quadrotor.
 Install and configure Webots and Python controller support.
 Execute a simple Webots controller to perform take-off, hover, and land.
 
 ---
 
-2. ### **Setup & Prerequisites**
+### 2. **Setup & Prerequisites**
 System Requirements
 
 
@@ -60,7 +60,7 @@ Install required packages:
 
 ---
 
-3. **Concepts Covered**
+### 3. **Concepts Covered**
 Lift and Thrust: How rotor speed generates upward force.
 
 
@@ -89,7 +89,7 @@ Sensor read → compute commands → send actuation → repeat
 
 ---
 
-4. **Tasks**
+### 4. **Tasks**
 Load the Starter World
 
 
@@ -165,7 +165,7 @@ Observe the drone take off, hover at approximately 1 m, then land smoothly.
 
 ---
 
-5. **Expected Output**
+### 5. **Expected Output**
 Controller Script: takeoff_hover_land.py with clear comments.
 
 
@@ -178,7 +178,7 @@ Brief Report:
 
 ---
 
-6. **Bonus Challenge (Optional)**
+### 6. **Bonus Challenge (Optional)**
 -Augment your controller to perform a square flight pattern at 1 m altitude before landing:
 -Fly forward 1 m, right 1 m, backward 1 m, left 1 m.
 -Return to the origin point.
@@ -186,11 +186,11 @@ Brief Report:
 
 ---
 
-7. **Resources**
+### 7. **Resources**
 
-Webots Installation Guide: https://cyberbotics.com/doc/guide/installing-webots
-Webots Python API Reference: https://cyberbotics.com/doc/reference/python-api 
-Mavic2Pro Tutorial: https://cyberbotics.com/doc/guide/mavic-2-pro?version=R2023a
+-Webots Installation Guide: https://cyberbotics.com/doc/guide/installing-webots
+-Webots Python API Reference: https://cyberbotics.com/doc/reference/python-api 
+-Mavic2Pro Tutorial: https://cyberbotics.com/doc/guide/mavic-2-pro?version=R2023a
 
 
 
