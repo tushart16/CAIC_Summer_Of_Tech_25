@@ -116,7 +116,6 @@ For each test case, print a **single line** with the **area of the intersection*
 To better understand the real-world challenges and computational aspects of supply chains, explore the following resources:
 
 ### 🌐 Supply Chain Fundamentals
-- [MITx: Supply Chain Fundamentals (Free Audit)](https://online.mit.edu/courses/supply-chain-fundamentals) — A world-class introduction to logistics, operations, and network design.
 - [Coursera: Supply Chain Management Specialization by Rutgers](https://www.coursera.org/specializations/supply-chain-management) — Covers sourcing, logistics, planning, and strategy.
 - [Khan Academy: Inventory and Supply Chain Management](https://www.khanacademy.org/economics-finance-domain/core-finance) — Good for economic context around inventory and flow.
 
