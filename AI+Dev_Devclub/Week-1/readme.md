@@ -92,7 +92,7 @@ df['char_count'] = df['content'].apply(len)
 
 ---
 
-### 🧠 Dev Angle: What EDA Should Help You Plan
+### 🧠 What EDA Should Help You Plan
 
 Think like a developer:
 - What features can be passed to an ML model in an API request?
