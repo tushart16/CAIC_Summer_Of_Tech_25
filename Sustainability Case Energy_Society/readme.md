@@ -1,41 +1,81 @@
-# 🌱 Climate Finance Case Competition
+# Sustainable Mobility Case Competition
 
-## 🏆 Overview  
-Emerging markets need **US $3 trillion/year** by 2030 for climate action. Your team will design a funding mechanism—green bond, blended-finance facility, or carbon-credit instrument—to mobilize at least **US $50 million** for a renewable energy project in a developing-economy context.
+---
 
-## 🎯 Challenge  
-Create a finance instrument that:  
-- Raises ≥ US $50 million with ≥ 2× private co-investment  
-- Follows ICMA Green Bond Principles or equivalent standards  
-- Mitigates key risks (policy, currency, construction, offtake)  
-- Delivers measurable impact (CO₂e avoided, MW installed)
+## 🎯 Objective
+Design a comprehensive low-emission transport strategy for an Indian metro/urban city of your choice. Your plan should reduce CO₂ emissions, improve access, and promote clean modes of travel.
 
-## 🌍 Scope  
-- **Location:** Any emerging-market country  
-- **Project:** Utility-scale solar, wind, small hydro, biomass, or microgrid  
-- **Stakeholders:** Government, DFIs, investors, sponsors, offtakers  
-- **References:** ICMA Green Bond Principles, UNFCCC CDM/Gold Standard
+---
 
-## 🔍 Deliverables (Week 5)  
-1. **Report** (6–8 pages):  
+## 📌 Challenge
+- **Modal Shift**: Increase share of public & active modes (bus, metro, cycling, walking)  
+- **Electrification**: Accelerate EV uptake (2-wheelers, 3-wheelers, buses) with charger network  
+- **Policy & Pricing**: Propose reform (congestion charges, parking, fuel taxes, incentives)  
+- **Infrastructure**: Outline transit expansions, BRT/cycle lanes, depot & charger siting  
+- **Impact**: Quantify CO₂ reduction, ridership growth, and equity benefits
+
+---
+
+## 🌍 Scope
+- **Location**: Any Indian city (e.g. Bengaluru, Pune, Surat, Kolkata…)  
+- **Target Year**: Choose a horizon (e.g. 2030 or 2040)  
+- **Stakeholders**: City transport authority, state government, utilities, private operators, citizens  
+- **References**: MoHUA/NUTP, NITI Aayog EV guidelines, Census mode-share data
+
+---
+
+## 🔍 Timeline & Weekly Deliverables
+
+| Week | Focus                                      | Deliverable                               |
+|:----:|--------------------------------------------|-------------------------------------------|
+|  1   | City baseline & emissions profile          | `Week1_Report.pdf`                        |
+|  2   | Scenario & vision development              | Scenario briefs (1–2 pages each)          |
+|  3   | Quantitative modeling & estimate impacts   | Analysis report + infrastructure sketch   |
+|  4   | Policy packages & finance mechanisms       | Draft roadmap & policy matrix             |
+|  5   | Final integration & presentation           | Final report (8–12 pages) + slide deck    |
+
+---
+
+## 📝 Final Deliverables (Week 5)
+1. **Report** (8–12 pages)  
    - Executive summary  
-   - Context & stakeholders  
-   - Instrument structure & terms  
-   - Financial highlights (IRR, DSCR)  
-   - Risk mitigation & impact metrics  
-2. **Presentation** (6 slides)
+   - City context & baseline  
+   - Vision & scenarios  
+   - Technical & policy interventions  
+   - Quantified impacts (CO₂, ridership, equity)  
+   - Implementation roadmap & stakeholder roles  
+2. **Presentation** (6–8 slides)  
+   - Concise summary of strategy, key metrics, and call to action  
 
-## ⏰ Timeline  
-- **Week 1:** Country & project selection  
-- **Week 2:** Stakeholders & finance landscape  
-- **Week 3:** Instrument design  
-- **Week 4:** Financial model & sensitivity  
-- **Week 5:** Final report & presentation
+---
 
-## ⚖️ Evaluation (Total 100%)  
-- Innovation & feasibility: 25%  
-- Private leverage: 20%  
-- Standard alignment: 15%  
-- Financial viability: 25%  
-- Risk & impact clarity: 15%  
+## ⚖️ Evaluation Criteria
 
+| Criterion                        | Weight |
+|----------------------------------|:------:|
+| Innovation & Feasibility         | 25%    |
+| Emission Reduction Impact        | 20%    |
+| Equity & Accessibility           | 15%    |
+| Policy & Regulatory Design       | 15%    |
+| Technical & Infrastructure Plan  | 15%    |
+| Clarity & Presentation           | 10%    |
+
+---
+
+## 📚 Resources
+- **Data & Reports**  
+  - Census of India “Mode of Travel to Work”  
+  - MoHUA Urban Transport Yearbook & Master Plans  
+  - NITI Aayog EV Charging Handbook  
+- **Emission Factors & Tools**  
+  - TERI GH₂ Calculator  
+  - ICCT India Transport Data  
+  - IPCC GHG Guidelines  
+- **Policy Frameworks**  
+  - National Urban Transport Policy (NUTP)  
+  - FAME & State EV Policies  
+  - Smart Cities Mission guidelines  
+
+---
+
+Good luck! We look forward to your data-driven, equity-focused, low-carbon transport solutions.  
