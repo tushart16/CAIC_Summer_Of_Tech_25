@@ -1,4 +1,4 @@
-# Sustainable Mobility Case Competition
+# Sustainable Mobility Case Preparation
 
 ---
 
