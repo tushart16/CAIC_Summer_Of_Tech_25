@@ -5,6 +5,10 @@ Welcome to CAIC Summer of Tech
 
 ## [AI+Dev by Devclub](AI+Dev_Devclub/)
 
+## [GenAI by ACES ACM x ARIES](GenAI_ACES_ACM_X_ARIES/)
+
+## [CS Research by ARIES x ACES ACM](CS_Research_ARIES_X_ACES_ACM/)
+
 ## [AerialRobotics by AeroClub](AerialRobotics_AeroClub/)
 
 ## [Cybersecurity by Devclub](CyberSecurity_Devclub/)
