@@ -6,7 +6,9 @@
   <img src="https://img.shields.io/badge/Duration-6%20Weeks-orange" alt="Duration: 6 Weeks">
 </div>
 
-This will be a 5 week bootcamp to get **interested** people familised with the Defi and its economic effects in web3, will be taking online session along with weekly assingment nand top it off with project at the end.
+We're kicking off a 5-week bootcamp designed to get curious minds (yes, you! 👀) up to speed with DeFi and its economic impact in the world of Web3 🌐. Each week, you'll join online sessions, tackle weekly assignments (don’t worry, no pop quizzes... probably 😅), and wrap it all up with a capstone project that puts your skills to the test. 💪
+
+By the end of the bootcamp, you'll be flexing your brainpower by writing your very own DEX (Decentralised Exchange) — because why just use one when you can build your own? 🛠️📈
 
 ### Link to original repo: [here](https://github.com/blocsoc-iitd/defi-bootcamp)
 
