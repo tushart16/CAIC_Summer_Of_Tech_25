@@ -1,71 +1,56 @@
-# 🌍 Week 1 — Climate Finance Case Competition  
-### 📅 Duration: [Add Start Date] – [Add End Date]  
-### 🧭 Theme: Country & Project Selection for Climate Finance Case
+# Week 1: Baseline Assessment & City Selection
 
 ---
 
-## 🔎 Objective
-
-The aim of Week 1 is to help participants build a strong foundational understanding of real-world climate finance challenges by:
-
-- Selecting a specific country and sector (energy, transport, urban, etc.)
-- Identifying a suitable project (real or conceptual) that aligns with sustainability goals
-- Outlining the policy and financial context of the chosen geography
-- Preparing for deeper financial modeling and impact analysis in later weeks
+## 🎯 Objective
+- Select an Indian metro/urban city for your case study.  
+- Gather baseline data on demographics, transport infrastructure, and modal shares.  
+- Estimate annual transport CO₂ emissions.  
+- Identify 2–3 key mobility challenges or opportunities.
 
 ---
 
-## 📝 Tasks & Deliverables
+## 📌 Key Tasks
 
-### ✅ Assignment Checklist
+1. **City Selection**  
+   - Pick any Indian city (e.g., Bengaluru, Pune, Surat, Kolkata).  
+   - Justify your choice: population size, growth rate, data availability, strategic importance.
 
-1. 🔬 Choose a country (developing/emerging preferred)
-2. 🌿 Choose a sustainable infrastructure project (real or hypothetical)
-3. 📊 Collect data on:
-   - Climate goals (e.g. NDCs)
-   - Investment gap
-   - Key players (govt., banks, MDBs, DFIs)
-4. 💰 Understand the climate finance landscape (grants, concessional loans, carbon markets)
-5. 🧠 Identify key risks & barriers to climate finance flow in the chosen country
+2. **Baseline Transport Profile**  
+   - **Demographics & Urban Form**  
+     - Population, population density, urban area (km²).  
+   - **Vehicle Stock & Modal Share**  
+     - Number of 2-wheelers, 3-wheelers, cars, buses, metro ridership.  
+     - % trips by each mode (use Census “Mode of Travel to Work” or city surveys).  
+   - **Infrastructure Inventory**  
+     - Total road network length, km of metro/BRT/cycle lanes.
 
----
-
-## 📂 Submission Guidelines
-
-- Create a folder named: `Week1_<TeamName or LeaderName>`
-- Submit the following files:
-  - `Week1_Report.pdf` or `.docx` — Max 4 pages
-  - (Optional) `Project_Data.xlsx` — Include basic cost breakdowns or CAPEX estimates
-  - (Optional) `Visuals/Map.png` — Any graphical data you used
-- Upload your folder via GitHub Pull Request or direct upload
+3. **Emissions Baseline**  
+   - Apply published emission factors (e.g. TERI, ICCT, or IPCC) to estimate annual CO₂ (tCO₂/yr) by mode.  
+   - Document all assumptions (vehicle-km/day, load factors, emission factors).
 
 ---
 
-## 📚 Resources (Recommended)
+## 📝 Deliverables (Due end of Week 1)
 
-- [UNFCCC NDC Registry](https://unfccc.int/NDCREG)
-- [Climate Policy Initiative](https://www.climatepolicyinitiative.org/)
-- [IRENA Renewable Finance Data](https://www.irena.org/Statistics/View-Data-by-Topic/Finance-and-Investment)
-- [World Bank Climate Data](https://climatedata.worldbank.org/)
-- MDB Reports (World Bank, ADB, AfDB)
-- India-specific: CEEW, NITI Aayog, NIIF, Invest India portals
+- **Week1_Report.pdf** (or .docx) containing:  
+  1. **City Selection Summary** (½–1 page)  
+  2. **Baseline Data Tables** (demographics, vehicle stock, modal share, infrastructure)  
+  3. **Emissions Estimate Table** (tCO₂/yr by mode)  
+  4. **Key Observations** (bullet points on challenges/opportunities)
 
----
-
-## 🧑‍⚖️ Evaluation Criteria
-
-| Criterion                      | Weightage |
-|-------------------------------|-----------|
-| Project relevance & clarity   | 25%       |
-| Research depth                | 30%       |
-| Realism of country-context    | 20%       |
-| Use of data & references      | 15%       |
-| Presentation & structure      | 10%       |
+- **Optional Attachments**:  
+  - `baseline_data.xlsx` (spreadsheet of raw data)  
+  - `city_map.png` (annotated map of transport network)
 
 ---
 
-## 💬 Notes
----
+## 📚 Resources
 
-🏁 Let’s get started — your project journey toward climate resilience begins now!
+- **Census of India 2011** – “Mode of Travel to Work” tables: http://censusindia.gov.in/  
+- **MoHUA Road Transport Yearbook & Annual Reports**: https://mohua.gov.in/  
+- **Emission Factors**:  
+  - TERI GH₂ Calculator: https://www.teriin.org/  
+  - ICCT India Transport Data: https://theicct.org/  
+  - IPCC GHG Guidelines: https://www.ipcc-nggip.iges.or.jp/  
 
