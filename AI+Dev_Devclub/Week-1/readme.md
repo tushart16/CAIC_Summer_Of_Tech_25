@@ -1,238 +1,154 @@
-# 🚀 CAIC Summer of Technology 2025 
-## 🧠 Machine Learning: Week 1  
-### 🔍 Problem Understanding, Dataset Familiarization & Exploratory Data Analysis (EDA)  
+# 🚀 CAIC Summer of Technology 2025  
+## 🧠 Machine Learning + Development Track: Week 1  
+### 🔍 Problem Understanding, Dataset Exploration & Dev Planning  
 
 ---
 
-## 🗒 Problem Statement Recap: Behavior Simulation
+## 🗒 Problem Statement
 
-Welcome to Week 1! 🎉
+We're building a system to help marketers understand and optimize their tweets using machine learning. Two core tasks:
 
-Our goal is to simulate *user engagement behavior* on Twitter. Specifically, we are trying to *predict the number of likes* a tweet will receive, given its metadata:
+1. **Predict tweet likes** from metadata (text, timestamp, media)
+2. **Generate tweet text** from metadata (brand, media, etc.)
 
-> *Inputs*:  
-- Date and Time of posting  
-- Tweet Text  
-- Media Links  
-- Company & Username  
-
-> *Output*:  
-- Predicted number of Likes
-
-This model will help *digital marketers* evaluate the potential impact of their content and optimize what they post and when they post it.
+You’ll work with ~300K tweets and eventually integrate your models into a user-facing app.
 
 ---
 
-## 📦 Dataset Details
+## 🎯 Week 1 Objectives
 
-We are given a dataset of *~300,000 tweets* from verified brand handles, with attributes:
-- date (Timestamp)
-- content (Tweet Text)
-- username
-- media (Image/Video URLs)
-- company
-- likes (Target variable)
-
-🧪 The test dataset is split into:
-- Tweets from *unseen brands*
-- Tweets from *unseen time periods*
-
-📁 *Links*:  
-- [Train Data Sheet](https://docs.google.com/spreadsheets/d/1JcESl7qCCBvS6xpWMZplhCXunvmkcNU_)  
+Before we model anything, we need to:
+- Understand the dataset
+- Clean and analyze it
+- Plan how it will be used in an API
+- Identify the features we’ll engineer for models
+- Think ahead about frontend/backend integration
 
 ---
 
-## 🧰 Week 1 Plan: Step-by-Step Guide
+## 🧰 1. Environment Setup
 
-### ✅ 1. Setup Your ML Environment
+Use **Google Colab** this week.
 
-We recommend using *Google Colab* for this assignment:
-- No installation required
-- Free GPU and TPU
-- Easy collaboration and notebook sharing
+Pros:
+- No setup required
+- Integrated with Google Drive
+- Great for collaboration
 
-🔗 [Colab Setup Guide (Playlist)](https://www.youtube.com/playlist?list=PLjVLYmrlmjGcV3YFqPy5V2ZvJ1XuzvFiu)
-
-Optional: Use local Jupyter Notebooks if you're comfortable.
+Optional: Setup Jupyter locally with `pandas`, `matplotlib`, `seaborn`, `textblob`.
 
 ---
 
-### ✅ 2. Load and View the Data
+## 📦 2. Load the Dataset
 
-Steps to follow in your notebook:
-
-python
+```python
 import pandas as pd
 
-# Load the dataset
-df = pd.read_csv("path_to_train_data.csv")  # Replace with your path or mount Google Drive
+df = pd.read_csv("path_to_data.csv")  # replace with your actual path
 
-# View dataset shape
-print("Shape of dataset:", df.shape)
-
-# Peek at the data
+df.shape
 df.head()
-
-# Data types and missing values
 df.info()
 df.isnull().sum()
-
+```
 
 ---
 
-### 🧹 3. Data Cleaning & Preprocessing
+## 🧼 3. Light Preprocessing (for EDA and Dev Readiness)
 
-#### 🧼 Handle Missing Values
-
-python
-# Drop rows where crucial info is missing
+```python
 df.dropna(subset=['content', 'username', 'company', 'likes'], inplace=True)
-
-# Fill media nulls with 'no_media'
 df['media'].fillna('no_media', inplace=True)
-
-# Add a binary flag for media presence
 df['has_media'] = df['media'].apply(lambda x: x != 'no_media')
-
-
-#### 🧼 Remove Duplicates
-
-python
-df.drop_duplicates(inplace=True)
-
-
-#### 🧼 Clean Text Columns
-
-python
 df['content'] = df['content'].astype(str).str.strip().str.lower()
-
-
-#### 🧼 Convert Timestamp to Datetime
-
-python
 df['datetime'] = pd.to_datetime(df['date'], errors='coerce')
+```
 
-
----
-
-### 📊 4. Exploratory Data Analysis (EDA)
-
-This is where we understand *data patterns* and uncover *feature importance* for future modeling.
+This gives us:
+- Clean features for EDA
+- Fields we can send via API (in future)
 
 ---
 
-#### 🎯 Target Variable Analysis: likes
+## 📊 4. Exploratory Data Analysis
 
-python
+```python
 import seaborn as sns
 import matplotlib.pyplot as plt
 
 sns.histplot(df['likes'], kde=True)
-plt.title("Distribution of Likes")
-
-
-python
 sns.boxplot(x=df['likes'])
+```
 
-
-python
-import numpy as np
-df['log_likes'] = np.log1p(df['likes'])
-
-
----
-
-#### 🧠 Categorical Analysis
-
-python
-# Media impact
-sns.boxplot(x='has_media', y='likes', data=df)
-
-# Average likes per company
-df.groupby('company')['likes'].mean().sort_values(ascending=False).head(10).plot(kind='barh')
-
-
----
-
-#### ⏰ Temporal Patterns
-
-python
+```python
 df['hour'] = df['datetime'].dt.hour
 df['day_of_week'] = df['datetime'].dt.day_name()
+```
 
-# Likes by hour
-sns.barplot(x='hour', y='likes', data=df)
-
-# Likes by day
-sns.boxplot(x='day_of_week', y='likes', data=df)
-
-
----
-
-#### 📏 Text Feature Engineering
-
-python
-# Length-based features
-df['word_count'] = df['content'].apply(lambda x: len(str(x).split()))
-df['char_count'] = df['content'].apply(lambda x: len(str(x)))
-
-# Plot
-sns.scatterplot(x='word_count', y='likes', data=df)
-
+```python
+df['word_count'] = df['content'].apply(lambda x: len(x.split()))
+df['char_count'] = df['content'].apply(len)
+```
 
 ---
 
-#### 💬 Sentiment Analysis (Optional)
+### 🧠 Dev Angle: What EDA Should Help You Plan
 
-python
-from textblob import TextBlob
-
-df['sentiment'] = df['content'].apply(lambda x: TextBlob(x).sentiment.polarity)
-sns.scatterplot(x='sentiment', y='likes', data=df)
-
-
----
-
-## 🧠 Bonus EDA Ideas
-
-| Technique | Why Use It |
-|----------|------------|
-| Correlation Heatmap | Understand numeric relationships |
-| t-SNE / UMAP | Reduce high-dim features for visualization |
-| Word Clouds | Spot common high-engagement terms |
-| TF-IDF Vectorization | Use for clustering/content analysis |
-| N-gram analysis | Phrase patterns in high-like tweets |
-| Clustering with KMeans | Discover content themes |
-| Time Series Decomposition | Engagement trends over time |
-| Named Entity Recognition | Extract brands/places/products mentioned |
+Think like a developer:
+- What features can be passed to an ML model in an API request?
+- Which fields should the frontend ask users for?
+- What preprocessing should happen inside the API?
+- Can we calculate features (e.g., word count, has_media) *inside* the backend?
 
 ---
 
-## 📚 Useful Resources
+## 🛠️ 5. Feature Plan for APIs
 
-### 🧪 EDA & Data Cleaning  
-- [Kaggle: EDA Course](https://www.kaggle.com/learn/data-cleaning)  
-- [Practical Pandas](https://realpython.com/pandas-python-explore-dataset/)  
-- [Seaborn Gallery](https://seaborn.pydata.org/examples/index.html)
+These are likely features to use:
+- `company`, `username`
+- `content` → `word_count`, `sentiment`
+- `media` → `has_media`
+- `datetime` → hour, weekday
 
-### 🏗 Feature Engineering  
-- [Feature Engineering Guide](https://www.kaggle.com/learn/feature-engineering)  
+Make a note of this mapping! You’ll use it in the backend.
+
+---
+
+## 🧠 Bonus Ideas
+
+| Topic | Use |
+|--|--|
+| WordClouds | Visualize engaging keywords |
+| TextBlob | Get sentiment polarity |
+| TF-IDF | Later for text vectorization |
+| t-SNE | Explore clustering of content |
+| Named Entity Recognition | See what brands/places are mentioned |
+
+---
+
+## 📚 Resources
+
+- [EDA Guide – Kaggle](https://www.kaggle.com/learn/data-cleaning)  
+- [Feature Engineering – Kaggle](https://www.kaggle.com/learn/feature-engineering)  
+- [Streamlit Docs](https://docs.streamlit.io/)  
+- [FastAPI Tutorial](https://fastapi.tiangolo.com/tutorial/)  
 
 ---
 
 ## ✅ Week 1 Deliverables
 
-1. 📒 A Colab Notebook that includes:
-   - Data Loading
-   - Data Cleaning & Feature Preparation
-   - EDA Visualizations and Feature Insights
-2. ✍ Summary of observations and potential features for modeling
+- ✅ Cleaned dataset
+- ✅ EDA notebook with plots & insights
+- ✅ Feature list planned for modeling
+- ✅ Plan for API input/output structure
 
 ---
 
-## 🔮 What’s Next?
+## 🔮 What’s Next (Week 2)
 
-In *Week 2*, we’ll dive into building models that predict likes using features we explored in this week.
+- Build and train a model to predict likes (Task 1)
+- Wrap it in an API using Flask or FastAPI
+- Accept metadata and return predicted likes
 
-Stay curious, and keep exploring! 💡  
-“Behind every great model is a great EDA.”
+---  
+Build smart. Build useful. Let’s get started 🚀
