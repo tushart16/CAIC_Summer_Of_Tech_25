@@ -56,5 +56,4 @@
 
 ---
 
-## 📂 Suggested Folder Structure
 
