@@ -132,3 +132,8 @@ By the end of this 5-week journey, you will have developed a production-ready me
 Remember, the goal is not just to build a working application, but to understand the underlying principles, best practices, and architectural decisions involved in modern web development. Focus on writing clean, maintainable code and understanding each technology's role in the overall system.
 
 Good luck, and happy coding!
+
+##
+
+Here is the link to the WhatsApp community for CSOT: [CSOT WhatsApp Community](https://chat.whatsapp.com/JtGaWv9W3UV3YwUHW4EHVr)  
+Feel free to ask your questions or discuss your doubts with us in the FullStack Whatsapp group!
