@@ -204,10 +204,12 @@ Note that this list is not exhaustive and is mean to just be a starting point fo
 
 ## 📚 Learning Resources
 
+- [Sentdex YouTube Channel](https://www.youtube.com/@sentdex/)
+- [FreeCodeCamp YouTube Channel](https://www.youtube.com/@freecodecamp)
+- [Tech With Tim Flask Playlist](https://www.youtube.com/playlist?list=PLzMcBGfZo4-n4vJJybUVV3Un_NFS5EOgX)
+- [Tech With Tim ML Playlist](https://www.youtube.com/playlist?list=PLzMcBGfZo4-mP7qA9cagf68V06sko5otr)
+- [Nicholas Renotte YouTube Playlists](https://www.youtube.com/@NicholasRenotte/playlists)
 - [Intro to ML - Kaggle](https://www.kaggle.com/learn/intro-to-machine-learning)
-- [Scikit-learn Docs](https://scikit-learn.org/stable/)
-- [XGBoost Docs](https://xgboost.readthedocs.io/)
-- [FastAPI Docs](https://fastapi.tiangolo.com/)
 
 ---
 
