@@ -4,9 +4,10 @@ Feature List :
 
       1. Text Features : 
             -> Checking for promotional words, url , hashtag count, mentions, 
-               would have added engagement feature had the data set also contain likes/comment datafor the post  etc. (can be done on backend on getting username ?) 
+               would have added engagement feature had the data set also contain likes/comment data for the post  etc. (can be done on backend on getting username ?) 
             -> Sentiment Analysis of post using TextBlob , check polarity and subjectivity, detecting emotion
-            -> Length Metrics - Character count, word count.
+            -> Length Metrics - Character count, word count 
+            -> Named Entity Recognition : Identifying brands/places in the post
 
       2. Temporal Features :
             -> Posting Time - Hour of day, day of week
