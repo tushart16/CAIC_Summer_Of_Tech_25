@@ -1,0 +1,36 @@
+Feature List :
+
+  A. Tweet Performance Predictor Features :
+
+      1. Text Features : 
+            -> Checking for promotional words, url , hashtag count, mentions, 
+               would have added engagement feature had the data set also contain likes/comment datafor the post  etc. (can be done on backend on getting username ?) 
+            -> Sentiment Analysis of post using TextBlob , check polarity and subjectivity, detecting emotion
+            -> Length Metrics - Character count, word count.
+
+      2. Temporal Features :
+            -> Posting Time - Hour of day, day of week
+      3. Other :
+            -> Does the post has_media ?
+            -> Is the post biased (based on subjectivity) ?
+
+  B. Tweet Content Generator Features (to be added)
+
+      1. Content Parameters :
+            -> Topic/Theme - Subject matter specification
+            -> Tone/Style - Professional, casual, humorous, inspirational
+            -> Target Audience - Demographics and interests
+            -> Content Length - Short, medium, thread-style
+            -> Call-to-Action Type - Engagement, link click, retweet
+
+      2. Generation Capabilities
+            -> Template-Based Generation - Pre-defined successful formats
+            -> Contextual Generation - Based on current trends/events
+            -> Personalized Generation - Account history-informed content
+            -> A/B Variant Creation - Multiple versions for testing
+            -> Hashtag Suggestions - Relevant and trending hashtags
+
+
+Plan for API structure :
+
+    
