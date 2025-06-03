@@ -19,7 +19,7 @@ By the end of this week, you will:
 
 ## Week 2 Topics
 
-### 📚 [Classical Cryptography & Encoding](classical-crypto.md)
+### [Classical Cryptography & Encoding](classical-crypto.md)
 Learn about ciphers, encoding schemes, and CyberChef mastery:
 - **Caesar & Vigenère Ciphers** - Ancient secrets with modern applications
 - **Obscure Classical Ciphers** - Playfair, Polybius, Beaufort, and more exotic methods
@@ -27,7 +27,7 @@ Learn about ciphers, encoding schemes, and CyberChef mastery:
 - **CyberChef Mastery** - Your Swiss Army knife for crypto challenges
 - **Practice Examples** - Hands-on challenges with step-by-step solutions
 
-### 🔐 [Modern Cryptography](modern-crypto.md)
+### [Modern Cryptography](modern-crypto.md)
 Master contemporary encryption and understand real-world security:
 - **Symmetric Encryption** - AES, DES, stream ciphers and block cipher modes
 - **Asymmetric Cryptography** - RSA, ECC, key exchange protocols
