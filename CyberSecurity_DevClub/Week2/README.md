@@ -159,7 +159,7 @@ Learn to investigate digital evidence like a pro:
 
 ## Week 2 Checklist
 
-- [ ] Read all four topic-specific guides
+- [ ] Read all five topic-specific guides
 - [ ] Practiced with online tools (CyberChef, hash crackers, stego analyzers)
 - [ ] Completed practice challenges in each topic area
 - [ ] Tried PicoCTF Gym challenges for additional practice
