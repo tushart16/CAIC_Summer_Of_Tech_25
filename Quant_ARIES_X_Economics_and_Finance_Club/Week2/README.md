@@ -57,9 +57,9 @@ This assignment emphasizes applying machine learning concepts, evaluating model 
 - [ARIMA for Time Series Forecasting](https://youtu.be/nK_jMFdSTZ8?si=NPvPWJa0_PbzztfH)
 
 #### Backtesting 
--[Backtesting: Definition, How It Works, and Downsides](https://www.investopedia.com/terms/b/backtesting.asp?utm_source=chatgpt.com)
--[Backtesting.py](https://kernc.github.io/backtesting.py/doc/backtesting/#gsc.tab=0)
--[Backtesting.py – An Introductory Guide to Backtesting with Python](https://algotrading101.com/learn/backtesting-py-guide/?utm_source=chatgpt.com)
+- [Backtesting: Definition, How It Works, and Downsides](https://www.investopedia.com/terms/b/backtesting.asp?utm_source=chatgpt.com)
+- [Backtesting.py](https://kernc.github.io/backtesting.py/doc/backtesting/#gsc.tab=0)
+- [Backtesting.py – An Introductory Guide to Backtesting with Python](https://algotrading101.com/learn/backtesting-py-guide/?utm_source=chatgpt.com)
 
 ---
 
