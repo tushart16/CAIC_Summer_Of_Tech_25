@@ -1,0 +1,55 @@
+Feature explanation + model improvement notes :
+
+So i started with basic features and a RandomForest model , got very poor results with RMSE around 5k, I realised the data was very skewed, had high std devn , I thought of
+why not have 3 models , basically having same features just trained separately (different weights of parameters)
+
+{
+  Likes - min: 0
+  Likes - max: 560193
+  Likes - mean: 773.3647933333333
+  Likes - median: 76.0
+  Likes - std dev: 4931.463419190157
+}
+
+I classified the examples into 3 category :
+Category1 had posts with likes <= 4.4k with almost 2.3 lakh training samples
+and guess what thats almost 80% of data and maxLikes is 5.6L and thats why i guess its better to separate it from other posts having like on higher side
+
+Category2 had posts having likes <= 50k and almost 7k posts well thats not much but thats all I had
+remaining only 250 posts with high likes ( 50k-5L)
+
+Now one may argue I should have used different set of features for models , I did try but it didn't seem to yield any better results.
+
+So now coming to features my model uses :
+  does the post has_media?, time related features of post , text features which include char_count, word_count, promo_word_count, does content has url?, hashtag counts,emoji count, no of mentions
+  in post, polarity/subjectivity (sentiment of post) and
+
+  Named Entity Recognition (NER) to identify brands, places, I took top 50 entities and then for every row did 0/1 classficiation for each of entity
+  For training we need numerical features so  I encoded company name, username.
+
+  Historical performance of company (last 5 tweet likes avg) ,company wise avg_likes.
+
+  I used TF-IDF to get TF-IDF scores for top words for each tweet and used them as to classify text,find similarities and retrieve infromation 
+  (another numeric feature from content)
+  my tfidf_vector has following parameters : 
+  max_features=500: Only the 500 most important words across all documents
+  min_df=5: Words must appear in at least 5 documents to be included
+  max_df=0.8: Words that appear in more than 80% of documents are excluded
+  stop_words='english': Common English words like "the", "and", "is" are removed
+
+company_missing => so every post is definitely not related to a company so instead of dropping rows with missing company values i filled them with placeholder unknown
+and created a 1/0 feature which I feel can be used to predict likes as majority of personal posts wont get that much likes which kind of seperates it from rest
+
+
+I trained on couple of Network Architecture, RandomForest NeuralNetwork , XGBoos , and 3rd one worked best for me
+I tried several values for categorising likes and choosed the best working one
+I gave up at a RMSE of 1411.2103404524785
+
+Now about api , just takes the same input from user as provided to us in dataset and convert them to required features
+but the challenging part is to decide what weights to be given to respective model and I find it realy challenging and realised the backfiring of my strategy
+but whatsoever I did some case work and tried my best but its not at its best rightnow, I will try to improve it
+
+I would try adding certain more things in my predictor to retrieve some information about user from the net followers, likes/comments history etc, and also about people/brand mentioned
+in the posts etc.
+
+The like predictor needs a lot of improvement atp and I will try rectify it to boma.
